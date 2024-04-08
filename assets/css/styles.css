@@ -1,0 +1,348 @@
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+}
+
+
+header {
+    background-color: #1e231e;
+    padding: 20px;
+}
+
+
+main {
+    padding: 20px;
+    padding-bottom: 150px ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer {
+    background-color: #1e231e;
+    color: white;
+    text-align: center;
+    position: absolute;
+    padding-bottom: 20px;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+article {
+    margin-bottom: 40px;
+}
+
+
+article a {
+    color: #f3ed3e;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+/* index.html */
+   
+    #intro{
+        text-align: center;
+    }
+
+    #intro strong{
+            color: #96ab10;
+    }
+
+    #intro small{
+        color: #bed143; 
+    }
+    #intro small span{
+        color: #8fa11b;
+        font-weight: 700;
+    }
+
+    #intro h1{
+        color: #a4b729; 
+        margin: 4px;
+        font-size: 60px;
+    }
+
+    #intro .citacao{
+        width: 35%; 
+        margin: auto;
+    }
+
+    #imagensSobre{
+        display:inline-flex; 
+        background-color: #1c1f17; 
+        padding: 30px 0px 30px 0px;
+        box-shadow: 2px 3px 10px #b5b6b5;
+        border-radius: 5px;
+    }
+
+    #imagensSobre h2{
+        width: 15%; 
+        margin: 0px 0px 0px 50px; 
+        font-size: 30px; 
+        align-content: center; 
+        color: #d7e678;
+    }
+
+    #inicial h2{
+        text-align: center;
+    }
+
+    #inicial h2 a{
+        text-decoration: none; 
+        background-color: #1c1f17; 
+        color: #d7e678; 
+        padding: 20px; 
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+
+    #inicial h2 a:hover{
+        background-color: #14160f; 
+    }
+
+    #inicial h2:hover{
+        transition: 0.3s;
+        transform: scaleX(1.1) scaleY(1.1);
+    }
+
+    #iconeGmail{
+        width: 20%;
+        margin: auto;
+    }
+
+    #iconeGmail img{
+        width: 10%;
+    }
+
+    #viagens{
+        width: 80%;
+        margin: auto;
+    }
+    #viagens li{
+        display: inline-block;
+        border-radius: 8px;
+        margin: 10px 0px 10px 5px;
+    }
+        .opcao{
+            background-color: #ffffff;
+            color: #1c1f17;
+            box-shadow: 0px 1px 2px #c0bdbd;
+            width: 20%;
+            padding: 10px 10px 7px 10px;
+            transition: 0.3s;
+        }
+
+        .opcao:hover{
+            transition: 0.3s;
+            transform: scaleX(1.1) scaleY(1.1);
+        }
+
+        .imgOp{
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 1px 1px 3px #00000096;
+            margin-bottom: 5px;
+        }
+
+    /* destinos.html */
+
+
+    #menu{
+        list-style-type: none;
+        display: inline-flex;
+        align-items: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+
+    #menu .item{
+        text-decoration: none;
+        font-weight: bold;
+        margin-left: 10px;
+        color: #14160f;
+        padding: 8px;
+        border-radius: 8px;
+        background-color: #8fa11b;
+    }    
+    
+    .icones{
+        padding-top: 0px !important;
+        color: #14160f;
+        padding: 3px 5px 3px 5px ;
+        border-radius: 8px;
+        background-color: #8fa11b;
+        align-items: center;
+        vertical-align: middle;
+    }
+    #intro_D{
+        display:inline-flex; 
+        background-color: #14160f; 
+        padding: 60px 0px 60px 0px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-bottom: 0px !important;
+    }
+
+    #intro_D h2{
+        color: #c4d653;
+        font-size: 40px;
+        margin: 0px 10px 0px 50px;
+        align-content: center;
+    }
+    #intro_D #viagens{
+        width: 100% !important;
+        padding-inline-start: 0px !important;
+
+    }
+
+
+    .opcao2 .imgOp{
+        width: 15%;
+    }
+
+    .valores li{
+        padding: 0px 10px 0px 0px ;
+    }
+    .valores, .infos{
+        padding-inline-start: 0px;
+    }
+
+    .infos{
+        font-size: 16px;
+    }
+
+    .valores strong{
+        font-size: 22px;
+        color: #121a0c;
+    }
+
+    #saidas h2{
+        text-align: right;
+        margin: 0px 50px 30px 0px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+
+    #saidas a{
+        text-decoration: none;
+        background-color: #c4d653;
+        color: #1c1f17;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    #saidas{
+        background-color: #e3e4e0;
+        margin-bottom: 0px !important;
+        padding-bottom: 20px;
+    }
+
+    #saidasRegulares{
+        width: 80%;
+        list-style-type: none;
+        display: inline-flex; 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #saidasRegulares .opcao{
+        width: 30%;
+        margin-right: 20px;
+        
+    }
+    #saidasRegulares li{
+        border-radius: 8px;
+        margin: 10px 0px 10px 5px; 
+        margin-left: 0px !important;
+    }
+
+    #saidasRegulares li .valores, #saidasRegulares li .infos{
+        margin-left: 0px !important;
+    }
+
+    #saidasRegulares ul{
+        list-style-type: none;
+        padding-inline-start: 10px !important;
+    }
+
+    #saidasRegulares .li{
+        background-color: #ffffff;
+        color: #1c1f17;
+        box-shadow: 0px 1px 2px #c0bdbd;
+        transition: 0.3s;
+    }
+
+
+    #saidasRegulares .imgOp{
+        width: 100%;
+    }
+
+   /* empresas.html*/
+
+.intro_e{
+        background-color: #14160f;
+        text-align: center;
+        margin: auto;
+        width: 60%;
+        color: #bed143;
+   }
+
+   .intro_e h1{
+    font-size: 40px;
+   }
+
+   .intro_e{
+        
+   }
+
+   .intro_e p{
+    font-size: 18px;
+   }
+
+   .intro_e #icones span{
+        font-size: 35px;
+        vertical-align: middle;
+        padding-left: 10px;
+   }
+
+   .intro_e #icones{
+        font-size: 20px;
+   }
+
+   #empresas main{
+        background-color: #14160f;      
+        padding-bottom: 250px !important;
+      
+   }
+
+
+   /* fotos.html*/
+
+
+   #fotos main{
+    background-color: #14160f;
+    color: #bed143;
+   }
+
+   #fotos h1{
+    text-align: center;
+   }
+
+   #setaVolta{
+    text-align: right;
+    width: 100%;
+    margin-top: 50px;
+    background-color: #00000000;
+  }
+  
+  #setaVolta span{
+    color: #ffffff;
+    background-color: #427a13;
+    padding: 6px;
+    border-radius: 100%;
+  }
+
+  #setaVolta a{
+    background-color: #00000000;
+  }
