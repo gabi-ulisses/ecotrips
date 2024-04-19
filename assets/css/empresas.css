@@ -1,0 +1,66 @@
+.intro_e{
+    background-color: #14160f;
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    color: #bed143;
+}
+
+.intro_e h1{
+font-size: 40px;
+}
+
+.intro_e{
+    
+}
+
+.intro_e p{
+font-size: 18px;
+}
+
+.intro_e #icones span{
+    font-size: 35px;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.intro_e #icones{
+    font-size: 20px;
+}
+
+#empresas main{
+    background-color: #14160f;      
+    padding-bottom: 250px !important;
+  
+}
+
+
+/* fotos.html*/
+
+
+#fotos main{
+background-color: #14160f;
+color: #bed143;
+}
+
+#fotos h1{
+text-align: center;
+}
+
+#setaVolta{
+text-align: right;
+width: 100%;
+margin-top: 50px;
+background-color: #00000000;
+}
+
+#setaVolta span{
+color: #ffffff;
+background-color: #427a13;
+padding: 6px;
+border-radius: 100%;
+}
+
+#setaVolta a{
+background-color: #00000000;
+}

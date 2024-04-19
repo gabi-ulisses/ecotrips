@@ -1,0 +1,127 @@
+#menu{
+    list-style-type: none;
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+#menu .item{
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #14160f;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #8fa11b;
+}    
+
+.icones{
+    padding-top: 0px !important;
+    color: #14160f;
+    padding: 3px 5px 3px 5px ;
+    border-radius: 8px;
+    background-color: #8fa11b;
+    align-items: center;
+    vertical-align: middle;
+}
+#intro_D{
+    display:inline-flex; 
+    background-color: #14160f; 
+    padding: 60px 0px 60px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0px !important;
+}
+
+#intro_D h2{
+    color: #c4d653;
+    font-size: 40px;
+    margin: 0px 10px 0px 50px;
+    align-content: center;
+}
+#intro_D #viagens{
+    width: 100% !important;
+    padding-inline-start: 0px !important;
+
+}
+
+
+.opcao2 .imgOp{
+    width: 15%;
+}
+
+.valores li{
+    padding: 0px 10px 0px 0px ;
+}
+.valores, .infos{
+    padding-inline-start: 0px;
+}
+
+.infos{
+    font-size: 16px;
+}
+
+.valores strong{
+    font-size: 22px;
+    color: #121a0c;
+}
+
+#saidas h2{
+    text-align: right;
+    margin: 0px 50px 30px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+#saidas a{
+    text-decoration: none;
+    background-color: #c4d653;
+    color: #1c1f17;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#saidas{
+    background-color: #e3e4e0;
+    margin-bottom: 0px !important;
+    padding-bottom: 20px;
+}
+
+#saidasRegulares{
+    width: 80%;
+    list-style-type: none;
+    display: inline-flex; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#saidasRegulares .opcao{
+    width: 30%;
+    margin-right: 20px;
+    
+}
+#saidasRegulares li{
+    border-radius: 8px;
+    margin: 10px 0px 10px 5px; 
+    margin-left: 0px !important;
+}
+
+#saidasRegulares li .valores, #saidasRegulares li .infos{
+    margin-left: 0px !important;
+}
+
+#saidasRegulares ul{
+    list-style-type: none;
+    padding-inline-start: 10px !important;
+}
+
+#saidasRegulares .li{
+    background-color: #ffffff;
+    color: #1c1f17;
+    box-shadow: 0px 1px 2px #c0bdbd;
+    transition: 0.3s;
+}
+
+
+#saidasRegulares .imgOp{
+    width: 100%;
+}
