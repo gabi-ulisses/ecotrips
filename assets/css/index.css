@@ -1,145 +1,168 @@
 /* Introdução */
-
-#intro strong{
-    color: #96ab10;
+@keyframes balancar {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(-10px, 10px) rotate(-5deg); }
+    50% { transform: translate(10px, -10px) rotate(5deg); }
+    75% { transform: translate(-10px, 10px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
 }
 
-#intro small{
-    color: #bed143; 
+/* Animação para mover as imagens horizontalmente */
+@keyframes rolarHorizontalmente {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+#intro img {
+    animation: balancar 5s infinite;
 }
 
-#intro small span{
-    color: #8fa11b;
+#intro {
+    padding: 30px;
+}
+#intro strong {
+    color: #73ca1c;
+}
+
+#intro h1 {
+    color: #73ca1cc2;
+}
+
+#intro h1 span {
+    color: #73ca1c;
     font-weight: 700;
 }
 
-#intro h1{
-    color: #a4b729; 
-    margin: 4px;
-    font-size: 60px;
-}
-
-#imagensSobre{
-    padding: 30px 0px 30px 0px;
-    display:inline-flex;
-    border-radius: 5px;
-
-    background-color: #1c1f17; 
+/* Contêiner das imagens e rolagem horizontal */
+#imagensSobre {
+    padding: 30px 0;
+    display: inline-block !important;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    background-color: #1c1f17;
+    background-image: url("../img/fundo.svg");
     box-shadow: 2px 3px 10px #b5b6b5;
+    margin: 20px 0;
 }
 
- #imagensSobre h2{
-        width: 15%; 
-        margin: 0px 0px 0px 50px; 
-        font-size: 30px; 
-        align-content: center; 
-        color: #d7e678;
-    }
+#viagens{
+    display: inline-flex;
+    animation: rolarHorizontalmente 20s linear infinite;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    animation-play-state: running; /* Inicia a animação */
+}
 
-    #viagens{
-        width: 100%;
-    }
+#viagens:hover {
+    animation-play-state: paused; /* Pausa a animação ao passar o mouse */
+}
 
-    #viagens li{
-        display: inline-block;
-        border-radius: 8px;
-        margin: 10px 0px 10px 5px;
-    }
-    .opcao{
-        background-color: #ffffff;
-        color: #1c1f17;
-        box-shadow: 0px 1px 2px #c0bdbd;
-        width: 20%;
-        padding: 10px 10px 7px 10px;
-        transition: 0.3s;
-    }
-    .opcao:hover{
-        transition: 0.3s;
-        transform: scaleX(1.1) scaleY(1.1);
-    }
+#viagens li figure{
+    display: inline-block;
+    border-radius: 8px;
+    margin: 10px 5px;
+    text-align: center;
+    vertical-align: top;
+}
 
-    .imgOp{
-        width: 100%;
-        border-radius: 8px;
-        box-shadow: 1px 1px 3px #00000096;
-        margin-bottom: 5px;
-    }
-@media (max-width: 600px) {
+.opcao figure {
+    background-color: #ffffff;
+    color: #1c1f17;
+    box-shadow: 0px 1px 2px #c0bdbd;
+    width: 200px;
+    padding: 10px;
+    transition: 0.3s;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+}
 
-    #imagensSobre{
-        padding: 30px 30px 30px 30px;
-        display:block;
-        border-radius: 5px;
-    
-        background-color: #1c1f17; 
-        box-shadow: 2px 3px 10px #b5b6b5;
-    }
+.opcao figure:hover {
+    transform: scale(1.1);
+}
 
-    #imagensSobre h2{
+.imgOp {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px #00000096;
+    margin-bottom: 10px;
+}
+
+.opcao figure figcaption {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #1c1f17;
+    word-wrap: break-word;
+    white-space: normal;
+    text-align: left;
+}
+
+/* Responsividade */
+@media (max-width: 935px) {
+    #imagensSobre {
+        padding: 30px 0 30px 30px;
+    }
+    #imagensSobre h2 {
+        width: 25%;
+        margin: 0;
+    }
+    #viagens {
         width: auto;
-        font-size: 30px; 
-        color: #d7e678;
-        margin: 0px;
+        margin: 0;
     }
-
-    #viagens{
-        width: 100%;
-        padding-inline-start: 0px;
-        margin: auto !important;
-    }
-
-    #viagens li{
-        display: block;
-        border-radius: 8px;
-        margin: 0px 0px 0px 0px;
-    }
-    .opcao{
-        background-color: #ffffff;
-        color: #1c1f17;
-        box-shadow: 0px 1px 2px #c0bdbd;
-        width: 80%;
-        padding: 10px 10px 7px 10px;
-        transition: 0.3s;
-    }
-    .opcao:hover{
-        transition: 0.3s;
-        transform: scaleX(1.1) scaleY(1.1);
-    }
-
-    .imgOp{
-        width: 100%;
-        border-radius: 8px;
-        box-shadow: 1px 1px 3px #00000096;
-        margin-bottom: 5px;
+    .opcao figure{
+        width: 200px;
+        margin: 0 0 20px 20px !important;
     }
 }
-/*Botão "BORA!"*/
 
-#inicial aside h2 a{
-    text-decoration: none; 
-    background-color: #1c1f17; 
-    color: #d7e678; 
-    padding: 20px; 
+@media (max-width: 600px) {
+    #imagensSobre {
+        padding: 30px 0 30px 30px;
+    }
+    #imagensSobre h2 {
+        width: 25%;
+        margin: 0;
+    }
+    #viagens {
+        width: auto;
+        margin: 0;
+    }
+    .opcao {
+        width: 200px;
+        margin: 0 20px 0px 20px !important;
+    }
+}
+
+
+
+/* Botão "BORA!" */
+
+#inicial aside{
+    margin-bottom: 50px;
+}
+#inicial aside h2 a {
+    text-decoration: none;
+    background-color: #1c1f17;
+    color: #fcffeb;
+    padding: 20px;
     border-radius: 5px;
     transition: 0.3s;
 }
-#inicial aside h2 a:hover{
-    background-color: #14160f; 
+
+#inicial aside h2 a:hover {
+    background-color: #14160f;
 }
 
-#inicial aside h2:hover{
+#inicial aside h2:hover {
     transition: 0.3s;
     transform: scaleX(1.1) scaleY(1.1);
-}
-
-
-/* Rodapé */
-
-#iconeGmail{
-    width: 20%;
-    margin: auto;
-}
-
-#iconeGmail img{
-    width: 10%;
 }

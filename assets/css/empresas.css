@@ -1,3 +1,7 @@
+body {
+    background-color: #14160f;
+}
+
 .intro_e{
     background-color: #14160f;
     text-align: center;
@@ -8,10 +12,6 @@
 
 .intro_e h1{
 font-size: 40px;
-}
-
-.intro_e{
-    
 }
 
 .intro_e p{
