@@ -1,7 +1,3 @@
-@import url(index.css);
-@import url(empresas.css);
-@import url(destinos.css);
-
 /* Elementos principais */
 
 .center{
@@ -12,20 +8,62 @@ body {
     margin: 0 ;
     padding: 0;
     position: relative;
+    border-top: 50px #1e231e solid;
+    width: 100%;
 }
 
-
-header {
-    padding: 20px;
-
-    background-color: #1e231e;
+nav{
+    background-color: #1e231e8e;
+    position: fixed;
+    z-index: 2;
+    top: 80px;
+    border-radius: 0px 8px 8px 0px;
+    padding-right: 5px;
+    width: auto;
 }
 
+nav ul li{
+    margin-bottom: 3px;
+}
+
+#menu{
+    list-style-type: none;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-inline-start: 5px;
+}
+
+#menu .item{
+    text-decoration: none;
+    font-weight: bold;
+    color: #14160f;
+    padding: 5px;
+    border-radius: 8px;
+}   
+
+#menu .item img{
+    width: 35px;
+    vertical-align: middle;
+    margin: 0px;
+    padding: 0px;
+    transition: 0.3s;
+
+}   
+
+#menu .item img:hover{
+    transition: 0.3s;
+    transform: scaleX(1.4) scaleY(1.4);
+}   
+
+.icones{
+    align-items: center;
+    vertical-align: middle;
+    border-radius: 5px;
+}
 
 main{
-    padding: 20px;
-    padding-bottom: 150px ;
-
+    padding: 0px;
+    margin: 0px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -52,4 +90,34 @@ article a {
 
 article a:hover{
     text-decoration: underline;
+}
+
+/* Rodapé */
+
+#iconeGmail{
+    width: 20%;
+    margin: auto;
+}
+
+#iconeGmail img{
+    width: 10%;
+}
+
+@media (max-width: 400px) {
+    nav{
+        text-align: center;
+    }
+
+    nav ul{
+        padding: 0px;
+    }
+
+    #iconeGmail{
+        width: 10%;
+        margin: auto;
+    }
+    
+    #iconeGmail img{
+        width: 50%;
+    }
 }
