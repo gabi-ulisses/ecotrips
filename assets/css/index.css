@@ -1,21 +1,5 @@
-/* Introdução */
-@keyframes balancar {
-    0% { transform: translate(0, 0) rotate(0deg); }
-    25% { transform: translate(-10px, 10px) rotate(-5deg); }
-    50% { transform: translate(10px, -10px) rotate(5deg); }
-    75% { transform: translate(-10px, 10px) rotate(-5deg); }
-    100% { transform: translate(0, 0) rotate(0deg); }
-}
+@import url('keyframes.css');
 
-/* Animação para mover as imagens horizontalmente */
-@keyframes rolarHorizontalmente {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
 #intro img {
     animation: balancar 5s infinite;
 }
@@ -38,16 +22,16 @@
 
 /* Contêiner das imagens e rolagem horizontal */
 #imagensSobre {
-    padding: 30px 0;
+    padding: 30px 0px;
     display: inline-block !important;
     overflow: hidden;
     white-space: nowrap;
     position: relative;
-    width: 100%;
+    max-width: 100%;
     background-color: #1c1f17;
     background-image: url("../img/fundo.svg");
     box-shadow: 2px 3px 10px #b5b6b5;
-    margin: 20px 0;
+    margin: 20px 0px;
 }
 
 #viagens{
@@ -103,13 +87,12 @@
     word-wrap: break-word;
     white-space: normal;
     text-align: left;
+
 }
 
 /* Responsividade */
 @media (max-width: 935px) {
-    #imagensSobre {
-        padding: 30px 0 30px 30px;
-    }
+    
     #imagensSobre h2 {
         width: 25%;
         margin: 0;
@@ -125,9 +108,6 @@
 }
 
 @media (max-width: 600px) {
-    #imagensSobre {
-        padding: 30px 0 30px 30px;
-    }
     #imagensSobre h2 {
         width: 25%;
         margin: 0;
@@ -140,6 +120,10 @@
         width: 200px;
         margin: 0 20px 0px 20px !important;
     }
+
+#intro img {
+    width: 200px;
+}
 }
 
 

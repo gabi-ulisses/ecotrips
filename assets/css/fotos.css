@@ -1,15 +1,26 @@
+@import url('keyframes.css');
+
 body{
     background-color: #14160f;
 }
+
+header figcaption{
+    text-align: center;
+ }
+ 
+ header figcaption figure img{
+     margin: 60px 0px 20px 0px;
+     width: 50%; 
+     max-width: 300px;
+     animation: balancar2 5s infinite;
+ 
+ }
+
 #fotos main{
     background-color: #14160f;
-    color: #bed143;
-    }
-    
-    #fotos h1{
     text-align: center;
     }
-    
+  
     #setaVolta{
     text-align: right;
     width: 100%;
@@ -30,6 +41,7 @@ body{
 
     #viagens{
         width: 100%;
+        padding-inline-start: 0px;
     }
     
     #viagens li{
@@ -56,3 +68,57 @@ body{
         box-shadow: 1px 1px 3px #00000096;
         margin-bottom: 5px;
     }
+
+    @media (max-width: 935px) {
+        #imagensSobre {
+            padding: 30px 0 30px 30px;
+        }
+        #imagensSobre h2 {
+            width: 25%;
+            margin: 0;
+        }
+        #viagens {
+            width: auto;
+            margin: 0;
+        }
+        .opcao figure{
+            width: 200px;
+            margin: 0 0 20px 20px !important;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        #imagensSobre {
+            padding: 30px 0 30px 30px;
+        }
+        
+        #viagens {
+            width: auto;
+            margin: 0;
+        }
+        .opcao {
+            width: 200px;
+            margin: 0 20px 20px 0px !important;
+        }
+    }
+
+    @media (max-width: 495px) {
+        #imagensSobre {
+            padding: 30px 0 30px 30px;
+        }
+        
+        #viagens {
+            width: auto;
+            margin: 0;
+        }
+
+        #viagens li{
+            display: block;
+            margin-left: 30px !important;
+        }
+        .opcao {
+            width: 300px;
+            margin: 0 20px 20px 0px !important;
+        }
+    }
+    
