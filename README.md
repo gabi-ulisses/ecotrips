@@ -1,5 +1,5 @@
 
-# 🌍 [Ecotrips](https://gabi-ulisses.github.io/ecotrips
+# 🌍 [Ecotrips](https://gabi-ulisses.github.io/ecotrips)
 
 
 **Ecotrips** é uma agência de viagens ecológicas desenvolvida com HTML e CSS, como parte do estudo da disciplina *Introdução ao Desenvolvimento de Páginas Web*, no curso de *Sistemas para Internet*.
